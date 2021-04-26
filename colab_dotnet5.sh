@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Adds Jupyter kernels for F# and C# to a Google Colab session
 # Atilim Gunes Baydin (gunes@robots.ox.ac.uk), April 2021
+# Usage: upload an F# or C# notebook to Colab, open the notebook, then execute the following in a new cell before running anything else
+# !bash <(curl -Ls https://raw.githubusercontent.com/gbaydin/scripts/main/colab_dotnet5.sh)
 echo "Installing dotnet-sdk-5.0 and dotnet interactive for F# and C#..."
 wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 dpkg -i packages-microsoft-prod.deb > /dev/null
